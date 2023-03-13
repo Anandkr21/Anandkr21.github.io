@@ -6,28 +6,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Anand Kumar</title>
-    <link rel="icon" href="./images/roundImg.png" type="image/icon type">
+    <script src="index.js"></script>
+    <link rel="icon" href="./images/tabImg.png" type="image/icon type">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="nav">
-        <div id="nav-menu">
-            <nav>
-                <a class="logo" href="#">Portfo<span>lio</span></a>
+    <div id="home" class="nav-link home">
+        <div class="container">
+            <nav id="nav-menu">
+                <img src="images/logos.png" alt="logo" class="logo" >
                 <ul id="sidemenu">
-                    <li id="home"><a class="nav-link home" href="#home">Home</a></li>
-                    <li id="about"><a class="nav-link about" href="#about">About</a></li>
-                    <li id="skills"><a class="nav-link skills" href="#skills">Skills</a></li>
-                    <li id="projects"><a class="nav-link projects" href="#projects">Projects</a></li>
-                    <li id="contact"><a class="nav-link contact" href="#contact">Contact</a></li>
-                    <li id="resume-button-1">
-                        <a class="nav-link resume" id="resume-link-1" href='' download="">Resume</a>
-                    </li>
-                    <i class="fas fa-times"></i>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about" class="about section">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" class="nav-link resume"></a>Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+            <div class="header-text">
+                <h1>Hey 👋</h1>
+                &nbsp;
+                <p>I'm <span id="user-detail-name"> Anand Kumar. <br> </span> A passionate backend developer.</p>
+            </div>
+        </div>
+    </div> <!---------------------------------------About------------------------------------>
+    <div id="about" class="nav-link about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" class="home-img">
+                    <img src="images/user.png" alt="image">
+                </div>
+                <div class="about-col-2"  id="user-detail-intro">
+                    <h1 class="sub-title" >About Me</h1>
+                    &nbsp;
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus soluta molestias dolor fugiat impedit enim et odit voluptatibus inventore rerum nam deserunt at maiores voluptatem error, fuga, tempora itaque!</p>
+                    <br>
+                    <h3>Skills</h3>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('frontend')">Frontend</p>
+                        <p class="tab-links" onclick="opentab('backend')">Backend</p>
+                        <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="frontend">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="backend">
+                        <ul>
+                            <li><span>UI/UX</span><br>2 Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>UI/UX</span><br>3 Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                        </ul>
+                    </div>skills
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------skills---------------------------------->
+    <div id="skills" class="nav-link skills">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div class="skills-card">
+                    <i class="fas fa-code"></i>
+                    <h2 class="skills-card-name">Web Design</h2>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="skills-card">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2 class="skills-card-name">App Design</h2>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="skills-card">
+                    <i class="fab fa-app-store"></i>
+                    <h2 class="skills-card-name">APIs</h2>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------Projects---------------------------------->
+
+    <div id="projects" class="nav-link projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="project-card">
+                    <img src="project1images.png" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2images.png" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project3images/.png" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project4images.png" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project5images" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project6images.png" alt="">
+                    <div class="layer">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem!</p>
+                        <p class="project-tech-stack">Tech Stack</p>
+                        <a href="https://github.com/"><i class="fas fa-external-link-alt" class="project-github-link"></i></a>
+                        <a href="https://.netlify.app/"><i class="fas fa-external-link-alt" class="project-deployed-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--------------------------------------Contact Section goes here---------------------------------->
+    <div id="contact" class="nav-link contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane" id="contact-email"></i>xyz@gmail.com</p>
+                    <p><i class="fas fa-phone-square" id="contact-phone"></i>+91 01234 56789</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="contact-linkedin"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github" id="contact-github"></i></a>
+                    </div>
+                    <a href="cv.pdf" view download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Anand Kumar</p>
         </div>
     </div>
 </body>
