@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
+
       // sticky navbar on scroll script
       if (this.scrollY > 20) {
         $("#nav-menu").addClass("sticky");
@@ -15,6 +16,7 @@ $(document).ready(function () {
       }
     });
   
+
     // slide-up script
     $(".scroll-up-btn").click(function () {
       $("html").animate({ scrollTop: 0 });
@@ -22,17 +24,20 @@ $(document).ready(function () {
       $("html").css("scrollBehavior", "auto");
     });
   
+
     $("#nav-menu .menu li a").click(function () {
       // applying again smooth scroll on menu items click
       $("html").css("scrollBehavior", "smooth");
     });
   
+
     // toggle menu/navbar script
     $(".menu-btn").click(function () {
       $("#nav-menu .menu").toggleClass("active");
       $(".menu-btn i").toggleClass("active");
     });
   
+
     // typing text animation script
     var typed = new Typed(".typing", {
       strings: ["Back-End Developer", "Daydreamer"],
@@ -41,6 +46,7 @@ $(document).ready(function () {
       loop: true,
     });
   
+
     var typed = new Typed(".typing-2", {
       strings: ["Back-End Developer", "Daydreamer"],
       typeSpeed: 100,
@@ -48,6 +54,7 @@ $(document).ready(function () {
       loop: true,
     });
   
+
     // owl carousel script
     $(".carousel").owlCarousel({
       margin: 20,
@@ -72,6 +79,7 @@ $(document).ready(function () {
     });
   });
   
+  // Resume downloding
   let drive = document
     .querySelector(".Drivegoogle")
     .addEventListener("click", openDrive);

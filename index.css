@@ -503,6 +503,22 @@ background-color: rgb(255, 255, 255);
   width: 85%;
   
 }
+
+
+.regular{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  /* border: 3px solid red; */
+}
+
+.regular .git-card img{
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid black; */
+}
+
 .owl-dots {
   text-align: center;
   margin-top: 20px;
