@@ -419,7 +419,7 @@ background-color: rgb(255, 255, 255);
 .project .title::after {
   content: "see my work";
 }
-.project .carousel .card {
+.project .carousel .project-card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -427,22 +427,22 @@ background-color: rgb(255, 255, 255);
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover {
+.project .carousel .project-card:hover {
   background: #2253c8;
   color: #000;
   /* change */
 }
-.project .carousel .card .box {
+.project .carousel .project-card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover .box {
+.project .carousel .project-card:hover .box {
   transform: scale(1.05);
 }
-.project .carousel .card .text {
+.project .carousel .project-card .project-title {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -472,7 +472,7 @@ background-color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
 }
-.techStack {
+.project-tech-stack {
   color: purple;
 }
 
@@ -480,12 +480,12 @@ background-color: rgb(255, 255, 255);
 .repo-div a,
 .repo-div a:link,
 .demo-div a:link,
-.techStack {
+.project-tech-stack {
   text-decoration: none;
   color: white;
 }
 
-.project .carousel .card img {
+.project .carousel .project-card img {
   height: 250px;
   width: 250px;
   object-fit: cover;
@@ -493,7 +493,7 @@ background-color: rgb(255, 255, 255);
   border: 5px solid #2253c8;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover img {
+.project .carousel .project-card:hover img {
   border-color: #fff;
   color: white;
 }
