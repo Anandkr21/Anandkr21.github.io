@@ -173,12 +173,13 @@ section .title::after {
   display: flex;
   background: url(./images/background.jpg) no-repeat center;
   background-color: #111;
-  height: 100vh;
+  height: 50vh;
   color: #fff;
-  min-height: 500px;
+  min-height: 320px;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
+  /* border: 3px solid red; */
 }
 .home .max-width {
   width: 100%;
@@ -186,9 +187,12 @@ section .title::after {
 }
 .home .max-width .row {
   margin-right: 0;
+  
 }
 .home .home-content .text-1 {
   font-size: 27px;
+  margin-top: -220px;
+  /* border: 3px solid red; */
 }
 .home .home-content .text-2 {
   font-size: 75px;
