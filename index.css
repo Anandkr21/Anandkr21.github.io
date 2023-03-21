@@ -74,9 +74,9 @@ section .title::before {
   position: absolute;
   bottom: 0px;
   left: 50%;
-  width: 180px;
+  width: 220px;
   height: 3px;
-  background: #111;
+  background: #2253c8;
   transform: translateX(-50%);
 }
 
@@ -336,7 +336,7 @@ section .title::after {
 
 .services .title::before,
 .project .title::before {
-
+  width: 190px;
   background: #fff;
 }
 
@@ -345,6 +345,8 @@ section .title::after {
   background: #111;
   /* content: "What I Provide"; */
 }
+
+
 
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -396,9 +398,6 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.skills .title::after {
-  content: "What I know";
-}
 
 /* skills right column */
 .skills .skills-content .column {
@@ -490,9 +489,6 @@ section .title::after {
 }
 
 /* project section styling */
-.project .title::after {
-  content: "see my work";
-}
 
 .project .carousel .project-card {
   background: #222;
@@ -635,9 +631,16 @@ section .title::after {
   height: 120px;
 }
 
+.react-activity-calendar .title::before{
+  width: 455px;
+}
+
+
+
 /* contact section styling */
-.contact .title::after {
-  content: "get in touch";
+
+.contact .title::before{
+  width: 240px;
 }
 
 .contact .contact-content .column {
