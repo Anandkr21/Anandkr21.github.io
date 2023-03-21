@@ -498,7 +498,7 @@ background-color: rgb(255, 255, 255);
   color: white;
 }
 
-#gitcal .calendar{
+.react-activity-calendar .calendar{
   border: none;
   width: 85%;
   
