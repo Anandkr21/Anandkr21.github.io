@@ -506,7 +506,7 @@ background-color: rgb(255, 255, 255);
 
 
 .regular{
-  width: 90%;
+  width: 85%;
   height: auto;
   margin: auto;
   display: flex;
@@ -517,6 +517,11 @@ background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   /* border: 5px solid black; */
+}
+
+#most-lang{
+    /* border: 4px solid red; */
+    width: 31%;
 }
 
 .owl-dots {
