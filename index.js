@@ -87,7 +87,7 @@ $(document).ready(function () {
   function openDrive() {
     window.open(
       (href =
-        "https://drive.google.com/file/d/1Xr0EtXHM0ZXSNPtNY1F7g0Pn_p7t579D/view?usp=share_link")
+        "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
     );
   }
   
