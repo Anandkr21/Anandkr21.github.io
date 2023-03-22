@@ -257,6 +257,11 @@ section .title::after {
   background: none;
 }
 
+
+#resume-button-2{
+  display: none;
+}
+
 /* about section styling */
 #about {
   background-color: rgb(255, 255, 255);
@@ -632,7 +637,7 @@ section .title::after {
   height: 120px;
 }
 
-.react-activity-calendar .title::before{
+.react-activity-calendar .title::before {
   width: 455px;
 }
 
@@ -640,7 +645,7 @@ section .title::after {
 
 /* contact section styling */
 
-.contact .title::before{
+.contact .title::before {
   width: 240px;
 }
 
@@ -995,16 +1000,16 @@ footer span a:hover {
 
 @media (max-width: 375px) {
 
-/* navbar styling */
-#nav-menu {
-  position: fixed;
-  width: 95%;
-  z-index: 999;
-  padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
-  transition: all 0.3s ease;
-  /* border: 4px solid green; */
-}
+  /* navbar styling */
+  #nav-menu {
+    position: fixed;
+    width: 95%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+    /* border: 4px solid green; */
+  }
 
   .home .home-content .text-2 {
     font-size: 50px;
@@ -1055,7 +1060,7 @@ footer span a:hover {
   }
 
 
-  .react-activity-calendar .title::before{
+  .react-activity-calendar .title::before {
     width: 250px;
   }
 
