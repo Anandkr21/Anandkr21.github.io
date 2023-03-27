@@ -505,7 +505,7 @@ section .title::after {
 
 .project .carousel .project-card:hover {
   background: #2253c8;
-  color: #000;
+  color: white;
   /* change */
 }
 
@@ -567,10 +567,10 @@ section .title::after {
 
 .project .carousel .project-card img {
   height: 250px;
-  width: 250px;
+  width: 330px;
   object-fit: cover;
-  border-radius: 5%;
-  border: 5px solid #2253c8;
+  border-radius: 3%;
+  border: 3px solid #2253c8;
   transition: all 0.3s ease;
 }
 
