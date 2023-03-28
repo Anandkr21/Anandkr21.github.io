@@ -79,17 +79,25 @@ $(document).ready(function () {
     });
   });
   
+  
+  let drive = document
+    .querySelector(".Drivegoogle")
+    .addEventListener("click", openDrive);
+  
+  function openDrive() {
+    window.open(
+      (href =
+        "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
+    );
+  }
+  
+  let drive2 = document
+  .querySelector(".googleDrive")
+  .addEventListener("click", openDrive2);
 
-  
-  // Resume downloding
-  // let drive = document
-  //   .querySelector(".Drivegoogle")
-  //   .addEventListener("click", openDrive);
-  
-  // function openDrive() {
-  //   window.open(
-  //     (href =
-  //       "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
-  //   );
-  // }
-  
+  function openDrive2(){
+    window.open(
+      (href =
+        "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
+    );
+  }
