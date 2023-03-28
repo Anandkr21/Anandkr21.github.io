@@ -80,14 +80,14 @@ $(document).ready(function () {
   });
   
   // Resume downloding
-  let drive = document
-    .querySelector(".Drivegoogle")
-    .addEventListener("click", openDrive);
+  // let drive = document
+  //   .querySelector(".Drivegoogle")
+  //   .addEventListener("click", openDrive);
   
-  function openDrive() {
-    window.open(
-      (href =
-        "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
-    );
-  }
+  // function openDrive() {
+  //   window.open(
+  //     (href =
+  //       "https://drive.google.com/file/d/1iUGkZWUNxb4lR_VnnnASF-rPdIesBQBS/view?usp=share_link")
+  //   );
+  // }
   
