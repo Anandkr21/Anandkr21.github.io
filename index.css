@@ -172,7 +172,7 @@ section .title::after {
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color: #2253c8;
+  color : #2e67ee;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
