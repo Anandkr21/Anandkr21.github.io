@@ -172,7 +172,7 @@ section .title::after {
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color : #2e67ee;
+  color: #2e67ee;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
@@ -365,7 +365,6 @@ section .title::after {
 .services .serv-content .card:hover {
   background: #2253c8;
   color: #fff;
-  /* change*/
 }
 
 .services .serv-content .card .box {
@@ -400,7 +399,7 @@ section .title::after {
   border-radius: 5%;
   /* border: 5px solid crimson; */
   transition: all 0.3s ease;
-  
+
 }
 
 
@@ -507,7 +506,6 @@ section .title::after {
 .project .carousel .project-card:hover {
   background: #2253c8;
   color: white;
-  /* change */
 }
 
 .project .carousel .project-card .box {
@@ -516,6 +514,7 @@ section .title::after {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  background-size: cover;
 }
 
 .project .carousel .project-card:hover .box {

@@ -60,7 +60,7 @@ $(document).ready(function () {
     margin: 20,
     loop: true,
     autoplay: true,
-    autoplayTimeOut: 2000,
+    autoplayTimeOut: 1000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -87,7 +87,7 @@ let drive = document
 function openDrive() {
   window.open(
     (href =
-      "https://drive.google.com/file/d/1Xr0EtXHM0ZXSNPtNY1F7g0Pn_p7t579D/view?usp=share_link")
+      "https://drive.google.com/file/d/1Gj7TfAx-mEdUeijhJLglUw48RA89L0pb/view?usp=share_link")
   );
 }
 
@@ -98,6 +98,6 @@ let drive2 = document
 function openDrive2() {
   window.open(
     (href =
-      "https://drive.google.com/file/d/1Xr0EtXHM0ZXSNPtNY1F7g0Pn_p7t579D/view?usp=share_link")
+      "https://drive.google.com/file/d/1Gj7TfAx-mEdUeijhJLglUw48RA89L0pb/view?usp=share_link")
   );
 }
